@@ -18,6 +18,5 @@ commons-io = { module = "commons-io:commons-io", version.ref = "commons-io" }
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit-jupiter" }
 junit-jupiter-platform-launcher = { module = "org.junit.platform:junit-platform-launcher", version.ref = "junit-jupiter-platform" }
 
-
 [plugins]
 spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
