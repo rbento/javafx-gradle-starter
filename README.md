@@ -3,7 +3,7 @@
 
 A simple JavaFX project starter.
 
-<img width="1392" alt="Screenshot 2023-08-26 at 1 16 30 AM" src="https://github.com/rbento/javafx-gradle-starter/assets/1512264/b787d1b5-1033-4449-91cb-f5fbbdb719d1">
+<img width="1392" alt="Screenshot 2023-08-26 at 2 19 27 AM" src="https://github.com/rbento/javafx-gradle-starter/assets/1512264/7d95885e-2845-4aad-b44d-1f7451438c66">
 
 ### Dependencies
 ---
