@@ -3,13 +3,10 @@
 
 package rbento;
 
-public class SystemInfo {
+public final class SystemInfo {
 
-    public static String javaVersion() {
-        return System.getProperty("java.version");
-    }
+    public static final String JAVA_VERSION = System.getProperty("java.version");
+    public static final String JAVAFX_VERSION = System.getProperty("javafx.version");
 
-    public static String javafxVersion() {
-        return System.getProperty("javafx.version");
-    }
+    private SystemInfo() {}
 }

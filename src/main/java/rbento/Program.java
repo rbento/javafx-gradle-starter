@@ -3,6 +3,9 @@
 
 package rbento;
 
+import static rbento.SystemInfo.JAVAFX_VERSION;
+import static rbento.SystemInfo.JAVA_VERSION;
+
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
@@ -11,17 +14,16 @@ import javafx.stage.Stage;
 
 public class Program extends Application {
 
+    private static final String WINDOW_TITLE = "JavaFX";
+    private static final int WINDOW_WIDTH = 1280;
+    private static final int WINDOW_HEIGHT = 800;
+
     @Override
     public void start(Stage stage) {
-
-        var javaVersion = SystemInfo.javaVersion();
-        var javafxVersion = SystemInfo.javafxVersion();
-
-        var label = new Label("JavaFX " + javafxVersion + " running on Java " + javaVersion);
-        var scene = new Scene(new StackPane(label), 1280, 800);
-
-        stage.setTitle("JavaFX");
+        Label label = new Label("JavaFX %s running on Java %s".formatted(JAVAFX_VERSION, JAVA_VERSION));
+        Scene scene = new Scene(new StackPane(label), WINDOW_WIDTH, WINDOW_HEIGHT);
         stage.setScene(scene);
+        stage.setTitle(WINDOW_TITLE);
         stage.show();
     }
 
