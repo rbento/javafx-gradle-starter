@@ -8,9 +8,9 @@ A simple JavaFX project starter.
 ### Dependencies
 ---
 
-- [Gradle](https://gradle.org/releases/) 8.3
-- [JDK](https://www.azul.com/downloads/?package=jdk#zulu) 20 (STS) from Azul
-- [JavaFX](https://openjfx.io) 20.0.2
+- [Gradle](https://gradle.org/releases/) 8.4
+- [JDK](https://www.azul.com/downloads/?package=jdk#zulu) 21 from Azul
+- [JavaFX](https://openjfx.io) 21
 
 ### Build
 ---

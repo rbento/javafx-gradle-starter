@@ -1,10 +1,11 @@
 [versions]
 # Plugins
-javafx = "20.0.2"
-javafx-link = "2.25.0"
+javafx-core = "21.0.1"
+javafx-link = "3.0.1"
 javafx-module = "1.8.12"
-javafx-plugin = "0.0.13"
-spotless = "6.20.0"
+javafx-plugin = "0.1.0"
+palantir-java-format = "2.38.0"
+spotless = "6.22.0"
 
 # Libraries
 assertj = "3.24.2"

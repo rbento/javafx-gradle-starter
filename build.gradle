@@ -28,13 +28,13 @@ dependencies {
 
 java {
   toolchain {
-    languageVersion = JavaLanguageVersion.of(20)
+    languageVersion = JavaLanguageVersion.of(21)
     vendor = JvmVendorSpec.AZUL
   }
 }
 
 javafx {
-  version = "20.0.2"
+  version = libs.versions.javafx.core.get()
   modules = ["javafx.controls", "javafx.fxml", "javafx.graphics"]
 }
 
@@ -59,10 +59,10 @@ spotless {
   encoding "UTF-8"
   java {
     target "src/*/java/**/*.java"
-    targetExclude "${layout.buildDirectory}/**"
+    targetExclude "${project.layout.buildDirectory}/**"
     importOrder()
     removeUnusedImports()
-    palantirJavaFormat()
+    palantirJavaFormat(libs.versions.palantir.java.format.get())
     formatAnnotations()
     endWithNewline()
     licenseHeaderFile "${project.rootDir}/COPYRIGHT"
